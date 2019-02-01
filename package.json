@@ -10,8 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "dateformat": "^3.0.3",
-    "drivelist": "^6.4.2",
-    "graceful-fs": "^4.1.11",
-    "rimraf": "^2.6.2"
+    "drivelist": "^7.0.1",
+    "graceful-fs": "^4.1.15",
+    "rimraf": "^2.6.3"
   }
 }

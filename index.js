@@ -55,7 +55,7 @@ var mergeVideos = function(videoPath, outputPath) {
 					let outputFile = fullPath.substr(0, fullPath.lastIndexOf('.')) + '.mp4';
 					if (!fs.existsSync(outputFile)) {
 						//['-f', 'concat', '-safe', '0', '-i', fullPath, '-c:a', 'aac', '-c:v', 'hevc_videotoolbox', outputFile]
-						let ffmpeg = spawn(path.join(__dirname, FFMPEG), ['-f', 'concat', '-safe', '0', '-i', fullPath, '-c', 'copy', outputFile]);
+						let ffmpeg = spawn(path.join(__dirname, FFMPEG), ['-f', 'concat', '-safe', '0', '-i', fullPath, '-ac', '1', '-c', 'copy', outputFile]);
 						ffmpeg.stdout.on('data', (data) => {
 							//console.log(`stdout: ${data}`);
 						});
